@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Set viewport for responsive design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Title for the webpage -->
+	<title>Resume</title>
+	<!-- Include jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<!-- Main table structure for resume -->
+	<table border="1" width="100%" class="table">
+		<thead>
+			<!-- Header row with name -->
+			<tr height="60px" id="mypage-header">
+				<th colspan="2" id="displayName">Sunke Mallikarjuna
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- Main content area divided into left (topics) and right (details) -->
+			<tr height="400px">
+				<!-- Left column: topics list -->
+				<td width="20%" valign="top">
+					<h1>Topics</h1>
+					<ul>
+						<li>Objective</li>
+						<li>Education</li>
+						<li>Experience</li>
+						<li>Internships</li>
+						<li>Skills</li>
+						<li>Projects</li>
+						<li>Certifications</li>
+					</ul>
+				</td>
+				<!-- Right column: resume details -->
+				<td width="300px" valign="top">
+					<div>
+						<!-- Objective section -->
+						<h3>Objective</h3>
+						<p>To obtain a challenging position in a reputable organization where I can utilize my skills
+							and grow professionally while contributing to the success of the company.
+						</p>
+						<!-- Education section -->
+						<h3>Education</h3>
+						<p align="left">
+							Bachelor of Technology (B.Tech) <br>
+							Electronics and Communication Engineering <br>
+							MITS, Madanapalle <br>
+							Graduation Year: 2025 <br>
+						</p>
+						<!-- Experience section -->
+						<h3>Experience</h3>
+						<p align="left">
+							<strong>Intern-Software Engineer</strong><br>
+							Moolya Software Testing Pvt Ltd <br>
+							Oct 2025-Present <br>
+						<ul>
+							<li>Currently working as a backend developer intern.</li>
+							<li>Learning and assisting in backend development tasks.</li>
+							<li>Gaining hands-on experience in real-time projects.</li>
+						</ul>
+						</p>
+					</div>
+					<!-- Internships section -->
+					<h3>Internships</h3>
+					<ul>
+						<li>Backend Development | Intern Certify (virtual)</li>
+						<li>Web Development | Codtech IT Solutions (virtual)</li>
+					</ul>
+					<!-- Skills section -->
+					<h3>Skills</h3>
+					<table>
+						<tr>
+							<td>
+								<ul>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>Java</li>
+									<li>Python</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li>Java Script</li>
+									<li>SQL</li>
+									<li>JDBC</li>
+									<li>Servlet</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+					<!-- Projects section -->
+					<h3>Projects</h3>
+					<dl>
+						<dt><b>Student Management System</b></dt>
+						<dd>-Developed CRUD-based student management system.
+							Integrated Oracle DB for data persistence.</dd>
+					</dl>
+					<dt><b>Antenna Design</b></dt>
+					<dd>-Simulated and optimized antenna design for gain and bandwidth.
+						Applied RF principles in design and testing.</dd>
+					<!-- Certifications section -->
+					<h3>Certifications</h3>
+					<ul>
+						<li>OOP in Java (COURSERA)</li>
+						<li>JavaScript Certification (CISCO)</li>
+						<li>Google Data Analytics (COURSERA)</li>
+					</ul>
+				</td>
+			</tr>
+		</tbody>
+		<!-- Footer section with contact info -->
+		<tfoot id="footer">
+			<tr>
+				<!-- Footer cell that will trigger slideDown/slideUp -->
+				<td colspan="2" valign="top" height="10px" id="mypage-footer">
+					<div id="my-footer">
+						<p>
+							phone: +91 <span id="displayPhone">9110333218</span><br>
+							email: sunkemallikarjuna1121@gmail.com <br>
+						</p>
+					</div>
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+	<!-- Exercise section: small interactive forms -->
+	<section class="exercise-section">
+		<!-- MAX NUMBER FORM -->
+		<div class="form">
+			<fieldset>
+				<legend>max</legend>
+				<form action="">
+					<table>
+						<tr>
+							<td><label for="">First Number:</label></td>
+							<td><input type="number" id="num1" placeholder="enter first number"><br></td>
+						</tr>
+						<tr>
+							<td><label for="">Second Number:</label></td>
+							<td><input type="number" id="num2" placeholder="enter second number"></td>
+						</tr>
+					</table>
+				</form>
+				<!-- Calls findMax() function when clicked -->
+				<button onclick="findMax(Number(num1.value),Number(num2.value))" class="btn">Get Max Number</button><br>
+				<span id="res1"></span>
+			</fieldset>
+		</div>
+		<!-- REVERSE STRING FORM -->
+		<div class="form">
+			<fieldset>
+				<legend>reverse</legend>
+				<form action="">
+					<table>
+						<tr>
+							<td><label for="">String:</label></td>
+							<td><input type="text" id="str" placeholder="enter string"></td>
+						</tr>
+					</table>
+				</form>
+				<!-- Calls reverseString() function when clicked -->
+				<button onclick="reverseString(str.value)" class="btn">Reverse String</button><br>
+				<span id="res2"></span>
+			</fieldset>
+		</div>
+		<!-- LONGEST WORD FORM -->
+		<div class="form">
+			<fieldset>
+				<legend>long</legend>
+				<form action="">
+					<table>
+						<tr>
+							<td><label for="">String:</label></td>
+							<td><input type="text" id="longest" placeholder="enter comma-separated words"></td>
+						</tr>
+					</table>
+				</form>
+				<!-- Calls longestWord() function -->
+				<button onclick="longestWord(longest.value)" class="btn">Longest Word</button><br>
+				<span id="res3"></span>
+			</fieldset>
+		</div>
+		<!-- COOKIE FORM -->
+		<div class="form">
+			<fieldset>
+				<legend>cookie</legend>
+				<form action="">
+					<table>
+						<tr>
+							<td><label for="">Name:</label></td>
+							<td><input type="text" id="name" placeholder="enter name"></td>
+						</tr>
+						<tr>
+							<td><label for="">Phone:</label></td>
+							<td><input type="number" id="phone" placeholder="enter phone"></td>
+						</tr>
+					</table>
+				</form>
+				<!-- Calls setCookie() function when clicked -->
+				<button onclick="setCookie()" class="btn">save</button>
+			</fieldset>
+		</div>
+	</section>
+	<script src="exercise.js"></script>
+	<script src="jquery.js"></script>
+</body>
+
+</html>
