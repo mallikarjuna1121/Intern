@@ -1,0 +1,79 @@
+/* Basic body styling for page layout */
+body {
+	margin: 0;
+	padding: 0;
+	border: 2px solid rgba(0, 0, 0, 0.418);
+}
+
+/* Header section at the top */
+#mypage-header {
+	text-align: center;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.418);
+	background-color: rgb(88, 193, 235);
+	margin-top: -20px;
+}
+
+/* Left navigation menu area */
+#mypage-leftnav {
+	width: 20%;
+	border-right: 2px solid rgba(0, 0, 0, 0.418);
+	background-color: rgba(222, 222, 233, 0.37);
+	padding: 0px 20px;
+}
+
+/* Overall page structure using flex layout */
+.main-section {
+	display: flex;
+}
+
+/* Middle content section with scrolling */
+#mypage-centercontent {
+	margin-left: 10px;
+	overflow-y: scroll;
+	scrollbar-width: none;
+	height: 100vh;
+	width: 80%;
+}
+
+/* Skill section arranged horizontally */
+.skills-section {
+	margin-top: -25px;
+	display: flex;
+}
+
+/* Highlight text using bold weight */
+.important-content {
+	font-weight: bold;
+}
+
+/* Styling for individual content boxes */
+.highlight-box {
+	background-color: rgba(128, 128, 128, 0.048);
+	width: 50%;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+/* Justified paragraph styling */
+.paragraph-align {
+	text-align: justify;
+}
+
+/* Link appearance settings */
+.anchor {
+	text-decoration: none;
+}
+
+/* Link hover color */
+.anchor:hover {
+	color: green;
+}
+
+/* Footer section at the bottom */
+#mypage-footer {
+	height: auto;
+	background-color: rgb(88, 193, 235);
+	border-top: 2px solid rgba(0, 0, 0, 0.418);
+	padding-bottom: 2px;
+	width: 100%;
+}
