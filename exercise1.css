@@ -1,0 +1,110 @@
+/* Overall page setup */
+body {
+	margin: 0px;
+	padding: 0px;
+	border: 2px solid rgba(0, 0, 0, 0.418);
+	overflow: hidden;
+	padding-bottom: 80px;
+}
+
+/* Header styling */
+#mypage-header {
+	text-align: center;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.418);
+	background-color: rgb(88, 193, 235);
+	margin-top: -20px;
+	padding: 10px;
+	position: fixed;
+	width: 100%;
+}
+
+/* Left sidebar styling */
+#mypage-leftnav {
+	width: 20%;
+	border-right: 2px solid rgba(0, 0, 0, 0.418);
+	background-color: rgba(222, 222, 233, 0.37);
+	padding: 0px 20px;
+}
+
+/* Body section layout */
+.main-section {
+	margin-top: 40px;
+	display: flex;
+}
+
+/* Right content area styling */
+#mypage-centercontent {
+	margin-left: 10px;
+	overflow: scroll;
+	height: 100vh;
+	scrollbar-width: none;
+}
+
+/* Skill section layout */
+.skills-section {
+	margin-top: -25px;
+	display: flex;
+}
+
+/* Bold text for important content */
+.important-content {
+	font-weight: bold;
+}
+
+/* Style for education and experience boxes */
+.highlight-box {
+	background-color: rgba(128, 128, 128, 0.048);
+	width: 50%;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+/* Justify paragraph text */
+.paragraph-align {
+	text-align: justify;
+}
+
+/* Anchor link style */
+.anchor {
+	text-decoration: none;
+}
+
+/* Adjust spacing under header name */
+#mypage-header>h3 {
+	margin-bottom: -1px;
+}
+
+/* Footer styling */
+#mypage-footer {
+	height: auto;
+	background-color: rgb(88, 193, 235);
+	border-top: 2px solid rgba(0, 0, 0, 0.418);
+	padding-bottom: 2px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+/* Anchor hover effect */
+.anchor:hover {
+	color: green;
+}
+
+/* Extra space div */
+.extra-spaces {
+	padding: 40px;
+}
+
+/* Padding for left section list items */
+#mypage-leftnav li {
+	padding: 10px;
+}
+
+/* Margin adjustment for left section heading */
+#mypage-leftnav h1 {
+	margin-top: 20px;
+}
+
+.certification-styles {
+	padding-bottom: 30px;
+}
