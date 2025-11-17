@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Head section: meta, title, CSS, and JS includes -->
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Resume</title>
+	<link rel="stylesheet" href="ui.css"> 
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"> 
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script> 
+</head>
+
+<body>
+	<!-- Accordion container: header, center content, footer -->
+	<div id="accordion_container">
+		<h3 class="accordion_section">Header</h3>
+		<!-- Header block: display name and links -->
+		<div id="mypage-header" style="display: none;">
+			<h3 id="display_name">SUNKE MALLIKARJUNA</h3>
+			<a href="#" class="anchor">Linkedin | </a>
+			<a href="#" class="anchor">Github | </a>
+			<a href="#" class="anchor">Leetcode</a>
+		</div>
+
+		<h3 class="accordion_section">Center Content</h3>
+		<!-- Center content block: tabs and main content -->
+		<div id="mypage-centercontent">
+			<div class="main_section">
+				<div id="mypage-leftnav">
+					<div id="content_tabs">
+						<!-- Tab headers block -->
+						<ul id="tabs_styles">
+							<li><a href="#objective_content">Objective</a></li>
+							<li><a href="#education_content">Education</a></li>
+							<li><a href="#experience_content">Experience</a></li>
+							<li><a href="#internships_content">Internships</a></li>
+							<li><a href="#skills_content">Skills</a></li>
+							<li><a href="#projects_content">Projects</a></li>
+							<li><a href="#certifications_content">Certifications</a></li>
+						</ul>
+
+						<!-- Tab content sections block -->
+						<div id="center_content">
+							<!-- Objective content block -->
+							<div id="objective_content">
+								To obtain a challenging position in a reputable organization
+								where I can utilize my skills and grow professionally while
+								contributing to the success of the company.
+							</div>
+
+							<!-- Education content block -->
+							<div id="education_content">
+								Bachelor of Technology (B.Tech) <br>
+								Electronics and Communication Engineering <br>
+								MITS, Madanapalle <br>
+								Graduation Year: 2025
+							</div>
+
+							<!-- Experience content block -->
+							<div id="experience_content">
+								<span class="important_content">Intern-Software Engineer</span><br>
+								Moolya Software Testing Pvt Ltd <br>
+								Oct 2025-Present
+								<ul>
+									<li>Currently working as a backend developer intern.</li>
+									<li>Learning and assisting in backend development tasks.</li>
+									<li>Gaining hands-on experience in real-time projects.</li>
+								</ul>
+							</div>
+
+							<!-- Internships content block -->
+							<div id="internships_content">
+								<ul>
+									<li>Backend Development | Intern Certify(virtual)</li>
+									<li>Web Development | Codtech IT Solutions(virtual)</li>
+								</ul>
+							</div>
+
+							<!-- Skills content block -->
+							<div id="skills_content">
+								<ul>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JAVA</li>
+									<li>PYTHON</li>
+									<li>JAVA SCRIPT</li>
+									<li>SQL</li>
+									<li>JDBC</li>
+									<li>SERVLETS</li>
+								</ul>
+							</div>
+
+							<!-- Projects content block -->
+							<div id="projects_content">
+								<span class="important_content">Student Management System</span>
+								<p>-Developed CRUD-based student management system. Integrated
+									Oracle DB for data persistence.</p>
+
+								<span class="important_content">Antenna Design</span>
+								<p>-Simulated and optimized antenna design for gain & bandwidth.
+									Applied RF principles in design & testing.</p>
+							</div>
+
+							<!-- Certifications content block -->
+							<div id="certifications_content">
+								<ul>
+									<li>OOP in java(COURSERA)</li>
+									<li>Java Script Certification(CISCO)</li>
+									<li>Google Data Analytics(COURSERA)</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<h3 class="accordion_section">Footer</h3>
+		<!-- Footer block: contact info -->
+		<div id="mypage-footer" class="accordion_section">
+			<p>
+				Phone: +91 <span id="display_phone">9110333218</span><br>
+				email: sunkemallikarjuna1121@gmail.com <br>
+			</p>
+		</div>
+
+	</div>
+
+	<!-- Dialog box block -->
+	<div id="dialog_box" title="Header Dialog Box">
+		<p>Header Scroll Down Completed</p>
+	</div>
+
+	<!-- Exercises section block -->
+	<div class="exercise_section">
+
+		<!-- Date picker form block -->
+		<div class="exercise_forms">
+			<fieldset>
+				<legend class="legend_styles">Date Picker</legend>
+				<form action="">
+					<input type="text" id="date_picker" name="date_picker" class="input_box" placeholder="DD/MM/YYYY">
+				</form>
+			</fieldset>
+		</div>
+
+		<!-- Autocomplete form block -->
+		<div class="exercise_forms">
+			<fieldset>
+				<legend class="legend_styles">Auto Complete</legend>
+				<form action="">
+					<input type="text" placeholder="enter technologies..." id="auto_complete" class="input_box"
+						name="tech_stack">
+				</form>
+			</fieldset>
+		</div>
+
+		<!-- Max number form -->
+		<div class="exercise_forms">
+			<fieldset>
+				<legend class="legend_styles">Max Of Two Numbers</legend>
+				<form action="">
+					<table>
+						<tr>
+							<td><label for="">First Number:</label></td>
+							<td><input type="number" id="num1" class="input_box" placeholder="enter first number"><br>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="">Second Number:</label></td>
+							<td><input type="number" id="num2" class="input_box" placeholder="enter second number"></td>
+						</tr>
+					</table>
+				</form>
+				<button class="submit_btn" id="max_of_two_button">Get Max
+					Number</button><br>
+				<span id="max_number_result"></span>
+			</fieldset>
+		</div>
+
+		<!-- Cookie form -->
+		<div class="exercise_forms">
+			<fieldset>
+				<legend class="legend_styles">Cookies</legend>
+				<form action="">
+					<table>
+						<tr>
+							<td><label for="">Name:</label></td>
+							<td><input type="text" id="user_name" class="input_box" placeholder="enter name"></td>
+						</tr>
+						<tr>
+							<td><label for="">Phone:</label></td>
+							<td><input type="number" id="user_phone" class="input_box" placeholder="enter phone"></td>
+						</tr>
+					</table>
+				</form>
+				<button class="submit_btn" id="cookie_button">save</button>
+			</fieldset>
+		</div>
+
+		<!-- Reverse string form -->
+		<div class="exercise_forms">
+			<fieldset>
+				<legend class="legend_styles">Reverse word</legend>
+				<form action="">
+					<table>
+						<tr>
+							<td><label for="">String:</label></td>
+							<td><input type="text" id="reverse_input" class="input_box" placeholder="enter string"></td>
+						</tr>
+					</table>
+				</form>
+				<button class="submit_btn" id="reverse_button">Reverse String</button><br>
+				<span id="string_reverse_result"></span>
+			</fieldset>
+		</div>
+
+		<!-- Longest word form -->
+		<div class="exercise_forms">
+			<fieldset>
+				<legend class="legend_styles">Longest word</legend>
+				<form action="">
+					<table>
+						<tr>
+							<td><label for="">String:</label></td>
+							<td><input type="text" id="longest_input" class="input_box"
+									placeholder="enter comma-separated words"></td>
+						</tr>
+					</table>
+				</form>
+				<button class="submit_btn" id="longest_word_button">Longest Word</button><br>
+				<span id="longest_word_result"></span>
+			</fieldset>
+		</div>
+	</div>
+
+	<script src="ui.js"></script> <!-- External JS -->
+</body>
+
+</html>

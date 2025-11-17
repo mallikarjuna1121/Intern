@@ -1,0 +1,111 @@
+/* Grid layout for exercise sections: 2 columns with gap and top margin */
+.exercise_section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	align-items: start;
+	margin-top: 20px;
+}
+
+/* Header styling: center text, blue background, border, and rounded corners */
+#mypage-header {
+	text-align: center;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.418);
+	background-color: rgb(88, 193, 235);
+	border-radius: 10px;
+}
+
+/* Important content: bold text */
+.important_content {
+	font-weight: bold;
+}
+
+/* Anchor styling: remove underline and change color on hover */
+.anchor {
+	text-decoration: none;
+}
+
+.anchor:hover {
+	color: green;
+}
+
+/* Footer styling: blue background, top border, rounded corners */
+#mypage-footer {
+	background-color: rgb(88, 193, 235);
+	border-top: 2px solid rgba(0, 0, 0, 0.418);
+	border-radius: 10px;
+}
+
+/* Button spacing and hover effect */
+.submit_btn {
+	margin-left: 10%;
+	margin: 2px;
+	padding: 10px;
+	font-size: large;
+	border-radius: 5px;
+}
+
+.submit_btn:hover {
+	background-color: green;
+	color: white;
+	cursor: pointer;
+}
+
+/* Accordion section: green background and hover effect */
+.accordion_section {
+	background-color: green;
+}
+
+.accordion_section:hover {
+	cursor: pointer;
+	background-color: red;
+	border-radius: 10px;
+}
+
+/* Tab list items: rounded corners, margin, hover effect */
+#tabs_styles>li {
+	border-radius: 5px;
+	margin: 2px;
+}
+
+#tabs_styles>li:hover {
+	background-color: orangered;
+	border-radius: 10px;
+}
+
+/* Center content container: rounded corners */
+#mypage-centercontent {
+	border-radius: 10px;
+}
+
+/* Legend styles: border, rounded corners, padding, gradient background */
+.legend_styles {
+	border: 1px solid black;
+	border-radius: 0px 15px;
+	padding: 2px;
+	background: linear-gradient(45deg, yellow, green);
+}
+
+/* Form styling: background color, padding, rounded corners */
+.exercise_forms {
+	background-color: rgb(197, 187, 187);
+	padding: 10px;
+	border-radius: 20px;
+}
+
+/* Input box styling: padding, font size, rounded corners, focus effect */
+.input_box {
+	padding: 10px;
+	font-size: large;
+	border-radius: 5px;
+}
+
+.input_box:focus {
+	background-color: pink;
+	color: black;
+}
+
+/* Tabs content container: blue background */
+#content_tabs {
+	background-color: rgb(88, 193, 235);
+}
