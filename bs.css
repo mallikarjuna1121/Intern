@@ -1,0 +1,100 @@
+/* Header styling for top section */
+#mypage-header {
+	border-radius: 10px;
+	background-color: #222;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	margin-top: 20px;
+}
+
+/* Footer styling for bottom section */
+#mypage-footer {
+	border-radius: 10px;
+	background-color: #222;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	margin-top: 20px;
+}
+
+/* Styling for highlighting important text */
+.important_content {
+	font-weight: bold;
+}
+
+/* Base layout styling for background and spacing */
+body {
+	padding-top: 20px;
+	background-color: #f5f5f5;
+}
+
+/* Left side tab container styling */
+.tabs-left {
+	background-color: #f8f9fa;
+	padding: 15px;
+}
+
+/* Content area spacing */
+.center_content {
+	padding: 15px;
+}
+
+/* Highlight box appearance */
+.highlight_box {
+	background-color: #e9ecef;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+/* Paragraph text alignment */
+.paragraph_align {
+	text-align: justify;
+}
+
+/* Removing bullets and padding for skills/certification lists */
+.skills_section ul,
+.certification_styles {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+/* Desktop tabs layout changes */
+@media (min-width: 768px) {
+	.nav-tabs {
+		display: block;
+	}
+
+	.nav-tabs>li {
+		float: none;
+		margin-bottom: 2px;
+	}
+}
+
+/* Mobile tabs scrolling behavior */
+@media (max-width: 767px) {
+	.nav-tabs {
+		overflow-x: auto;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+
+	.nav-tabs>li {
+		display: inline-block;
+		float: none;
+	}
+}
+
+/* Form-group container styling */
+.form-group {
+	margin-bottom: 15px;
+	background-color: gray;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+/* Styling for exercise form sections */
+.exercise_forms {
+	padding: 10px;
+	border-radius: 20px;
+}
