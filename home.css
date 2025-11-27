@@ -1,0 +1,92 @@
+/* ----- Container block (main layout area) ----- */
+.container{
+    padding: 10px;
+    height: 90vh;
+}
+
+/* ----- Body background block ----- */
+body{
+    background-color: #dbecf796;
+}
+
+/* ----- Header block (top welcome bar) ----- */
+.header {
+    background: #6C63FF;
+    background-color: skyblue;
+    padding: 10px;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 10px;
+    font: bold;
+}
+
+/* ----- Friends section block ----- */
+.friends {
+    width: 25%;
+    float: left;
+    margin-top: 20px;
+    height: 82%;
+    overflow: auto;
+    background-color: rgb(212, 206, 206);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 5px 7px 20px gray;
+}
+
+/* ----- Friend link items block ----- */
+.friends a {
+    display: block;
+    padding: 5px;
+    background: #EDE9FF;
+    margin-bottom: 5px;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/* ----- Wall section block ----- */
+.wall {
+    width: 70%;
+    float: right;
+    margin-top: 20px;
+}
+
+/* ----- New post input area block ----- */
+.post-box {
+    margin-bottom: 20px;
+}
+
+/* ----- Individual post block ----- */
+.post {
+    background: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+/* ----- Wall posts container block ----- */
+.wall-posts{
+    height: 46vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgb(123, 138, 172);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+/* ----- Button styling block ----- */
+button {
+    font-size: 18px;
+    padding: 10px 25px;
+    background-color: #4b53ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ----- Button hover effect block ----- */
+button:hover {
+    background-color: #2d36e0;
+}
