@@ -24,42 +24,44 @@ create table tWall(user_id int(11),
 
 
 -- Query to fetch all information for a person given his name
-select u.*,f.friend_id,w.post,w.posting_date 
-from tUser u join tFriends f 
-on u.user_id=f.user_id join tWall w 
-on w.user_id=u.user_id where name='malli';
+SELECT u.*,f.friend_id,w.post,w.posting_date
+FROM tUser u
+LEFT JOIN tFriends f ON u.user_id = f.user_id
+LEFT JOIN tWall w ON u.user_id = w.user_id
+WHERE u.name = 'malli';
 
 -- Query to fetch all posts of a person given his name
-select w.post 
-from tUser u join tWall w 
-on u.user_id=w.user_id where u.name='malli';
+SELECT w.post
+FROM tUser u
+LEFT JOIN tWall w ON u.user_id = w.user_id
+WHERE u.name = 'malli';
 
 -- Query to fetch all posts of a particular friend of a person, given his name and the friends name
-select w.post 
-from tFriends f join tUser u1 
-on f.user_id=u1.user_id join tUser u2 
-on f.friend_id = u2.user_id join tWall w 
-on w.user_id = u2.user_id
-where u1.name='malli' and u2.name='raja';
+SELECT w.post
+FROM tUser u1
+LEFT JOIN tFriends f ON u1.user_id = f.user_id
+LEFT JOIN tUser u2 ON f.friend_id = u2.user_id
+LEFT JOIN tWall w ON w.user_id = u2.user_id
+WHERE u1.name = 'malli' AND u2.name = 'raja';
 
 -- Query to fetch all friends of a particular friend of a person, given the persons name and friend's name
-select u3.name as FriendOfFriend
-from tFriends f join tUser u1 
-on f.user_id=u1.user_id join tUser u2 
-on f.friend_id=u2.user_id join tFriends ff
-on ff.user_id=u2.user_id join tUser u3
-on u3.user_id=ff.friend_id 
-where u1.name='malli' and u2.name='raja';
+SELECT u3.name AS FriendOfFriend
+FROM tUser u1
+LEFT JOIN tFriends f ON u1.user_id = f.user_id
+LEFT JOIN tUser u2 ON f.friend_id = u2.user_id
+LEFT JOIN tFriends ff ON ff.user_id = u2.user_id
+LEFT JOIN tUser u3 ON u3.user_id = ff.friend_id
+WHERE u1.name = 'malli' AND u2.name = 'raja';
 
 -- Query to remove a particular friend from a persons list, given the persons name
-delete f
-from tFriends f join tUser u1
-on f.user_id=u1.user_id join tUser u2 
-on f.friend_id=u2.user_id
-where u1.name='malli' and u2.name='hari';
+DELETE f
+FROM tFriends f
+LEFT JOIN tUser u1 ON f.user_id = u1.user_id
+LEFT JOIN tUser u2 ON f.friend_id = u2.user_id
+WHERE u1.name = 'malli' AND u2.name = 'hari';
 
 -- Query to post something on his wall
-insert into tWall(user_id,post)
-select user_id,'this is my post'
-from tUser
-where name='malli';
+INSERT INTO tWall (user_id, post)
+SELECT user_id, 'this is my post'
+FROM tUser
+WHERE name = 'malli';
