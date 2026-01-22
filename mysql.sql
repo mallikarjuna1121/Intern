@@ -1,7 +1,7 @@
 -- DB schemas       
 
 -- tUser 
-create table tUser(user_id int(11),
+create table tUser(user_id int(11) AUTO_INCREMENT,
                    name varchar(50) not null,
                    email_id varchar(50) not null,
                    password varchar(50) not null,
